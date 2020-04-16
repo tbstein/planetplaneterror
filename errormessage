@@ -1,0 +1,224 @@
+ERROR: Command errored out with exit status 1:
+     command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-1vhzdya9/planetplanet/setup.py'"'"'; __file__='"'"'/tmp/pip-install-1vhzdya9/planetplanet/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-bc7dq1n6/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/tobias/.local/include/python3.7m/planetplanet
+         cwd: /tmp/pip-install-1vhzdya9/planetplanet/
+    Complete output (218 lines):
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-x86_64-3.7
+    creating build/lib.linux-x86_64-3.7/planetplanet
+    copying planetplanet/version.py -> build/lib.linux-x86_64-3.7/planetplanet
+    copying planetplanet/pool.py -> build/lib.linux-x86_64-3.7/planetplanet
+    copying planetplanet/constants.py -> build/lib.linux-x86_64-3.7/planetplanet
+    copying planetplanet/__init__.py -> build/lib.linux-x86_64-3.7/planetplanet
+    creating build/lib.linux-x86_64-3.7/planetplanet/photo
+    copying planetplanet/photo/trappist1.py -> build/lib.linux-x86_64-3.7/planetplanet/photo
+    copying planetplanet/photo/theta.py -> build/lib.linux-x86_64-3.7/planetplanet/photo
+    copying planetplanet/photo/structs.py -> build/lib.linux-x86_64-3.7/planetplanet/photo
+    copying planetplanet/photo/ppo.py -> build/lib.linux-x86_64-3.7/planetplanet/photo
+    copying planetplanet/photo/maps.py -> build/lib.linux-x86_64-3.7/planetplanet/photo
+    copying planetplanet/photo/eyeball.py -> build/lib.linux-x86_64-3.7/planetplanet/photo
+    copying planetplanet/photo/__init__.py -> build/lib.linux-x86_64-3.7/planetplanet/photo
+    creating build/lib.linux-x86_64-3.7/planetplanet/detect
+    copying planetplanet/detect/jwst.py -> build/lib.linux-x86_64-3.7/planetplanet/detect
+    copying planetplanet/detect/__init__.py -> build/lib.linux-x86_64-3.7/planetplanet/detect
+    running egg_info
+    writing planetplanet.egg-info/PKG-INFO
+    writing dependency_links to planetplanet.egg-info/dependency_links.txt
+    writing requirements to planetplanet.egg-info/requires.txt
+    writing top-level names to planetplanet.egg-info/top_level.txt
+    reading manifest file 'planetplanet.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    writing manifest file 'planetplanet.egg-info/SOURCES.txt'
+    copying planetplanet/photo/eyeball.c -> build/lib.linux-x86_64-3.7/planetplanet/photo
+    copying planetplanet/photo/inclination.dat -> build/lib.linux-x86_64-3.7/planetplanet/photo
+    copying planetplanet/photo/orbit.c -> build/lib.linux-x86_64-3.7/planetplanet/photo
+    copying planetplanet/photo/posteriors.dat -> build/lib.linux-x86_64-3.7/planetplanet/photo
+    copying planetplanet/photo/ppo.c -> build/lib.linux-x86_64-3.7/planetplanet/photo
+    copying planetplanet/photo/ppo.h -> build/lib.linux-x86_64-3.7/planetplanet/photo
+    creating build/lib.linux-x86_64-3.7/planetplanet/detect/filter_files
+    copying planetplanet/detect/filter_files/080924ch1trans_full.txt -> build/lib.linux-x86_64-3.7/planetplanet/detect/filter_files
+    copying planetplanet/detect/filter_files/080924ch2trans_full.txt -> build/lib.linux-x86_64-3.7/planetplanet/detect/filter_files
+    copying planetplanet/detect/filter_files/080924ch3trans_full.txt -> build/lib.linux-x86_64-3.7/planetplanet/detect/filter_files
+    copying planetplanet/detect/filter_files/080924ch4trans_full.txt -> build/lib.linux-x86_64-3.7/planetplanet/detect/filter_files
+    copying planetplanet/detect/filter_files/miri_filter.csv -> build/lib.linux-x86_64-3.7/planetplanet/detect/filter_files
+    running build_ext
+    building 'libppo' extension
+    creating build/temp.linux-x86_64-3.7
+    creating build/temp.linux-x86_64-3.7/rebound
+    creating build/temp.linux-x86_64-3.7/rebound/src
+    creating build/temp.linux-x86_64-3.7/progress
+    creating build/temp.linux-x86_64-3.7/planetplanet
+    creating build/temp.linux-x86_64-3.7/planetplanet/photo
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/tree.c -o build/temp.linux-x86_64-3.7/rebound/src/tree.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/transformations.c -o build/temp.linux-x86_64-3.7/rebound/src/transformations.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    rebound/src/transformations.c: In function ‘reb_transformations_inertial_to_jacobi_posvel’:
+    rebound/src/transformations.c:42:28: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+       42 |     for (unsigned int i=1;i<N;i++){
+          |                            ^
+    rebound/src/transformations.c: In function ‘reb_transformations_inertial_to_jacobi_posvelacc’:
+    rebound/src/transformations.c:83:28: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+       83 |     for (unsigned int i=1;i<N;i++){
+          |                            ^
+    rebound/src/transformations.c: In function ‘reb_transformations_inertial_to_jacobi_acc’:
+    rebound/src/transformations.c:127:28: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      127 |     for (unsigned int i=1;i<N;i++){
+          |                            ^
+    rebound/src/transformations.c: In function ‘reb_transformations_inertial_to_whds_posvel’:
+    rebound/src/transformations.c:247:28: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      247 |     for (unsigned int i=0;i<N;i++){
+          |                            ^
+    rebound/src/transformations.c:266:28: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      266 |     for (unsigned int i=1;i<N;i++){
+          |                            ^
+    rebound/src/transformations.c: In function ‘reb_transformations_whds_to_inertial_posvel’:
+    rebound/src/transformations.c:287:28: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      287 |     for (unsigned int i=1;i<N;i++){
+          |                            ^
+    rebound/src/transformations.c:297:28: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      297 |     for (unsigned int i=1;i<N;i++){
+          |                            ^
+    rebound/src/transformations.c: In function ‘reb_transformations_inertial_to_democraticheliocentric_posvel’:
+    rebound/src/transformations.c:317:28: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      317 |     for (unsigned int i=0;i<N;i++){
+          |                            ^
+    rebound/src/transformations.c:335:28: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      335 |     for (unsigned int i=1;i<N;i++){
+          |                            ^
+    rebound/src/transformations.c: In function ‘reb_transformations_democraticheliocentric_to_inertial_pos’:
+    rebound/src/transformations.c:351:28: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      351 |     for (unsigned int i=1;i<N;i++){
+          |                            ^
+    rebound/src/transformations.c:358:28: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      358 |     for (unsigned int i=1;i<N;i++){
+          |                            ^
+    rebound/src/transformations.c: In function ‘reb_transformations_democraticheliocentric_to_inertial_posvel’:
+    rebound/src/transformations.c:368:28: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      368 |     for (unsigned int i=1;i<N;i++){
+          |                            ^
+    rebound/src/transformations.c:376:28: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      376 |     for (unsigned int i=1;i<N;i++){
+          |                            ^
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/tools.c -o build/temp.linux-x86_64-3.7/rebound/src/tools.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/simulationarchive.c -o build/temp.linux-x86_64-3.7/rebound/src/simulationarchive.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    rebound/src/simulationarchive.c: In function ‘reb_simulationarchive_load_snapshot’:
+    rebound/src/simulationarchive.c:79:44: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+       79 |                 if (r->ri_janus.allocated_N<r->N){
+          |                                            ^
+    rebound/src/simulationarchive.c:96:49: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+       96 |                     if (r->ri_whfast.allocated_N<r->N){
+          |                                                 ^
+    rebound/src/simulationarchive.c:119:44: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      119 |                     for (unsigned int i=1;i<r->N;i++){
+          |                                            ^
+    rebound/src/simulationarchive.c:135:49: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      135 |                     if (r->ri_whfast.allocated_N<r->N){
+          |                                                 ^
+    rebound/src/simulationarchive.c:165:44: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      165 |                     for (unsigned int i=1;i<r->N;i++){
+          |                                            ^
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/rebound.c -o build/temp.linux-x86_64-3.7/rebound/src/rebound.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/particle.c -o build/temp.linux-x86_64-3.7/rebound/src/particle.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    rebound/src/particle.c: In function ‘reb_remove’:
+    rebound/src/particle.c:242:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+      242 |         for(int k=0;k<rim->globalN;k++){
+          |                      ^
+    rebound/src/particle.c:255:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+      255 |         if(global_index<rim->globalNactive){
+          |                        ^
+    rebound/src/particle.c:258:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+      258 |   for(int j=global_index; j<rim->globalN; j++){
+          |                            ^
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/output.c -o build/temp.linux-x86_64-3.7/rebound/src/output.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/integrator_whfast.c -o build/temp.linux-x86_64-3.7/rebound/src/integrator_whfast.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    rebound/src/integrator_whfast.c: In function ‘reb_whfast_interaction_step’:
+    rebound/src/integrator_whfast.c:352:36: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      352 |             for (unsigned int i=1;i<N_real;i++){
+          |                                    ^
+    rebound/src/integrator_whfast.c:390:36: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      390 |             for (unsigned int i=1;i<N_real;i++){
+          |                                    ^
+    rebound/src/integrator_whfast.c:397:36: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      397 |             for (unsigned int i=1;i<N_real;i++){
+          |                                    ^
+    rebound/src/integrator_whfast.c: In function ‘reb_whfast_kepler_step’:
+    rebound/src/integrator_whfast.c:461:28: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      461 |     for (unsigned int i=1;i<N_real;i++){
+          |                            ^
+    rebound/src/integrator_whfast.c: In function ‘reb_integrator_whfast_part1’:
+    rebound/src/integrator_whfast.c:572:32: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      572 |     if (ri_whfast->allocated_N != N){
+          |                                ^~
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/integrator_sei.c -o build/temp.linux-x86_64-3.7/rebound/src/integrator_sei.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/integrator_mercurius.c -o build/temp.linux-x86_64-3.7/rebound/src/integrator_mercurius.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    rebound/src/integrator_mercurius.c: In function ‘reb_mercurius_encounterstep’:
+    rebound/src/integrator_mercurius.c:93:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+       93 |     for (int i=0; i<rim->globalN; i++){
+          |                    ^
+    rebound/src/integrator_mercurius.c:101:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+      101 |             if (i<rim->globalNactive || rim->globalNactive==-1){
+          |                  ^
+    rebound/src/integrator_mercurius.c:101:59: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      101 |             if (i<rim->globalNactive || rim->globalNactive==-1){
+          |                                                           ^~
+    rebound/src/integrator_mercurius.c:138:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+      138 |     for (int i=0; i<rim->globalN; i++){
+          |                    ^
+    rebound/src/integrator_mercurius.c: In function ‘reb_integrator_mercurius_part1’:
+    rebound/src/integrator_mercurius.c:251:29: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      251 |     if (rim->rhillallocatedN<N){
+          |                             ^
+    rebound/src/integrator_mercurius.c:256:24: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      256 |     if (rim->allocatedN<N){
+          |                        ^
+    rebound/src/integrator_mercurius.c:263:25: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      263 |     if (riw->allocated_N<N){
+          |                         ^
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/integrator_leapfrog.c -o build/temp.linux-x86_64-3.7/rebound/src/integrator_leapfrog.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/integrator_janus.c -o build/temp.linux-x86_64-3.7/rebound/src/integrator_janus.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    rebound/src/integrator_janus.c: In function ‘gg’:
+    rebound/src/integrator_janus.c:117:14: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+      117 |     if (stage<(s.stages+1)/2){
+          |              ^
+    rebound/src/integrator_janus.c: In function ‘drift’:
+    rebound/src/integrator_janus.c:149:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+      149 |     for(int i=0; i<N; i++){
+          |                   ^
+    rebound/src/integrator_janus.c: In function ‘kick’:
+    rebound/src/integrator_janus.c:159:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+      159 |     for(int i=0; i<N; i++){
+          |                   ^
+    rebound/src/integrator_janus.c: In function ‘reb_integrator_janus_part2’:
+    rebound/src/integrator_janus.c:240:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+      240 |     for (int i=1; i<s.stages; i++){
+          |                    ^
+    rebound/src/integrator_janus.c: In function ‘reb_integrator_janus_synchronize’:
+    rebound/src/integrator_janus.c:256:32: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+      256 |     if (r->ri_janus.allocated_N==r->N){
+          |                                ^~
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/integrator_ias15.c -o build/temp.linux-x86_64-3.7/rebound/src/integrator_ias15.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/integrator_hermes.c -o build/temp.linux-x86_64-3.7/rebound/src/integrator_hermes.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/integrator.c -o build/temp.linux-x86_64-3.7/rebound/src/integrator.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/input.c -o build/temp.linux-x86_64-3.7/rebound/src/input.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/gravity.c -o build/temp.linux-x86_64-3.7/rebound/src/gravity.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/glad.c -o build/temp.linux-x86_64-3.7/rebound/src/glad.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/display.c -o build/temp.linux-x86_64-3.7/rebound/src/display.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    rebound/src/display.c: In function ‘reb_display_copy_data’:
+    rebound/src/display.c:1083:13: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+     1083 |     if (r->N>data->allocated_N){
+          |             ^
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/derivatives.c -o build/temp.linux-x86_64-3.7/rebound/src/derivatives.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/communication_mpi.c -o build/temp.linux-x86_64-3.7/rebound/src/communication_mpi.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/collision.c -o build/temp.linux-x86_64-3.7/rebound/src/collision.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c rebound/src/boundary.c -o build/temp.linux-x86_64-3.7/rebound/src/boundary.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c progress/progress.c -o build/temp.linux-x86_64-3.7/progress/progress.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c planetplanet/photo/orbit.c -o build/temp.linux-x86_64-3.7/planetplanet/photo/orbit.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -DLIBREBOUND -Irebound/src/ -Iprogress/ -Iplanetplanet/photo/ -I/usr/local/include -I/usr/include/python3.7m -c planetplanet/photo/eyeball.c -o build/temp.linux-x86_64-3.7/planetplanet/photo/eyeball.o -Wall -I/usr/local/include -fstrict-aliasing -O3 -std=c99 -Wno-unknown-pragmas -DLIBREBOUND -D_GNU_SOURCE -fPIC
+    planetplanet/photo/eyeball.c:10:10: fatal error: gsl/gsl_poly.h: No such file or directory
+       10 | #include <gsl/gsl_poly.h>
+          |          ^~~~~~~~~~~~~~~~
+    compilation terminated.
+    error: command 'gcc' failed with exit status 1
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-1vhzdya9/planetplanet/setup.py'"'"'; __file__='"'"'/tmp/pip-install-1vhzdya9/planetplanet/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-bc7dq1n6/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /home/tobias/.local/include/python3.7m/planetplanet Check the logs for full command output.
